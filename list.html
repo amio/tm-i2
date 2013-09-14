@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8" />
   <title>Tmi2 - List</title>
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" />
   <link rel="stylesheet" href="style/fonts.css" />
   <link rel="stylesheet" href="style/pure.css" />
   <link rel="stylesheet" href="style/tmi2.css" />
@@ -16,10 +18,36 @@
       <div class="tm-name">Tamper<span>monkey</span> <sup class="tm-version">v3.4.3568.10</sup></div>
       <div class="tm-by">by Jan Biniok</div>
     </div>
+    <div class="pure-u tm-nav">
+      <a class="pure-button tm-nav-button"><i class="icon-cog"></i></a>
+      <a class="pure-button tm-nav-button"><i class="icon-question-sign"></i></a>
+    </div>
   </div>
 </header>
+<div class="menu-bar">
+  <div class="wrapper pure-g">
+      <div class="list-operation pure-u-2-3">
+        <label class="pure-u list-selector"><input type="checkbox"></label>
+        <button class="pure-button"><i class="icon-circle"></i> Enable</button>
+        <button class="pure-button"><i class="icon-ban-circle"></i> Disable</button>
+        <button class="pure-button"><i class="icon-upload"></i> Update</button>
+        <button class="pure-button"><i class="icon-trash"></i> Remove</button>
+      </div>
+      <div class="list-else pure-u-1-3">
+        <button class="pure-button"><i class="icon-trash"></i> Create</button>
+      </div>
+    </div>
+  </div>
+</div>
 <article>
   <div class="wrapper pure-g">
+    <ul>
+      <li class="pure-g">
+        <div class="list-selector pure-u-1-6"></div>
+      </li>
+      <li></li>
+      <li></li>
+    </ul>
   </div>
 </article>
 </body>

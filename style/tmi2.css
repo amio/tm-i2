@@ -3,9 +3,13 @@
  * for Tampermonkey.
 **/
 
+/* ========== Pure Rewrite ========== */
+
 body, .pure-g [class *= "pure-u"], .pure-g-r [class *= "pure-u"] {
   font-family: "Open Sans", sans-serif;
 }
+
+.pure-button { padding: 0.4em 0.6em; }
 
 ul, ol, li { list-style: none; margin: 0; padding: 0; }
 
@@ -14,6 +18,7 @@ ul, ol, li { list-style: none; margin: 0; padding: 0; }
 .wrapper {
   width: 960px;
   margin: 0 auto;
+  position: relative;
 }
 
 .tm-icon {
@@ -52,6 +57,7 @@ header {
   overflow: hidden;
   background: linear-gradient(to bottom,  #CDA 0%,#8A8 100%);
   border-top: 3px solid #2A5C0B;
+  border-bottom: 1px solid #475;
 }
 
 .tm-logo {
@@ -91,9 +97,43 @@ header {
   opacity: 0.8;
 }
 
+.tm-nav {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.tm-nav-button {
+  height: 100%;
+  font-size: 40px;
+  line-height: 45px;
+  background-color: transparent;
+  opacity: 0.4;
+}
+
+.tm-nav-button:hover, .tm-nav-button.active {
+  background-color: rgba(0,0,0,0.05);
+  opacity: 1;
+}
+
 /* =========== List =========== */
 
-.list-header > div {
-  display: inline-block;
-  margin: 5px;
+.menu-bar {
+  padding: 5px 0;
+  border-bottom: 1px solid #DDD;
+  font-size: 14px;
+}
+
+.list-operation {
+}
+
+.list-selector {
+  width: 2em;
+  line-height: 2em;
+  text-align: center;
+}
+
+.list-else {
+  text-align: right;
 }
