@@ -1,0 +1,99 @@
+/**
+ * Created by Amio, 2013.09.14
+ * for Tampermonkey.
+**/
+
+body, .pure-g [class *= "pure-u"], .pure-g-r [class *= "pure-u"] {
+  font-family: "Open Sans", sans-serif;
+}
+
+ul, ol, li { list-style: none; margin: 0; padding: 0; }
+
+/* ========== Global ========== */
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.tm-icon {
+  display: inline-block;
+  height: 0.76em;
+  width: 0.76em;
+  background-color: #021;
+  position: relative;
+  border-radius: 0.08em;
+}
+
+.tm-icon:before, .tm-icon:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #9CBB92;
+  border-radius: 0.2em;
+  width: 0.3em;
+  height: 0.3em;
+  bottom: 0.05em;
+}
+
+.tm-icon:before {
+  left: 0.05em;
+}
+
+.tm-icon:after {
+  right: 0.05em;
+}
+
+/* ========== Header ========== */
+
+header {
+  height: 80px;
+  color: #031;
+  overflow: hidden;
+  background: linear-gradient(to bottom,  #CDA 0%,#8A8 100%);
+  border-top: 3px solid #2A5C0B;
+}
+
+.tm-logo {
+  font-size: 75px;
+  line-height: 80px;
+  padding: 0 0.1em;
+}
+
+.tm-title {
+  font-size: 15px;
+  line-height: 1em;
+  padding: 20px 0;
+}
+
+.tm-name {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
+
+.tm-version {
+  font-weight: normal;
+  font-size: 0.4em;
+  letter-spacing: 0.0em;
+  vertical-align: top;
+  position: relative;
+  top: 0.4em;
+}
+
+.tm-by {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 40px;
+  margin-left: 80px;
+  opacity: 0.8;
+}
+
+/* =========== List =========== */
+
+.list-header > div {
+  display: inline-block;
+  margin: 5px;
+}
