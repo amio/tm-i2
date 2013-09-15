@@ -13,6 +13,7 @@ ul, ol, li { list-style: none; margin: 0; padding: 0; }
 a { text-decoration: none; }
 .pure-button { padding: 0.4em 0.6em; background-color: #F4F4F4; color: #444; box-sizing:border-box; line-height: 1.2em; }
 .pure-button[disabled] { border: 1px solid #DDD; }
+.pure-button[class*="icon-"]:before { margin-right: 0.4em; }
 
 /* ========== Global ========== */
 
