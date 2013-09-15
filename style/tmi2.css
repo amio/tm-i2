@@ -117,9 +117,7 @@ header {
   padding: 5px 0;
   border-bottom: 1px solid #CCC;
   font-size: 14px;
-}
-
-.list-operation {
+  height: 27px;
 }
 
 .list-selector {
