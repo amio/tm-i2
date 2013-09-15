@@ -5,12 +5,14 @@
 
 /* ========== Pure Rewrite ========== */
 
-body, .pure-g [class *= "pure-u"], .pure-g-r [class *= "pure-u"] {
+body, button, .pure-g [class *= "pure-u"], .pure-g-r [class *= "pure-u"] {
   font-family: "Open Sans", sans-serif;
 }
-.pure-button { padding: 0.4em 0.6em; }
+body { background-color: whitesmoke; }
 ul, ol, li { list-style: none; margin: 0; padding: 0; }
 a { text-decoration: none; }
+.pure-button { padding: 0.4em 0.6em; background-color: #F4F4F4; color: #444; box-sizing:border-box; line-height: 1.2em; }
+.pure-button[disabled] { border: 1px solid #DDD; }
 
 /* ========== Global ========== */
 
@@ -111,19 +113,25 @@ header {
   opacity: 1;
 }
 
-/* =========== List =========== */
+/* =========== Menu Bar =========== */
 
 .menu-bar {
-  padding: 5px 0;
+  padding: 6px 0;
   border-bottom: 1px solid #CCC;
   font-size: 14px;
   height: 27px;
+  background-color: #FFF;
+}
+
+.menu-bar button{
+  line-height: 1em;
+  border: 1px solid rgba(0,0,0,0.2);
 }
 
 .list-selector {
   width: 30px;
   font-size: 20px;
-  line-height: 20px;
+  line-height: 1em;
   text-align: center;
 }
 
@@ -131,9 +139,11 @@ header {
   margin: 0;
 }
 
-.list-else {
+.menu-else {
   text-align: right;
 }
+
+/* =========== List =========== */
 
 .list-row, .list-head {
   display: table;
@@ -158,7 +168,7 @@ header {
   display: table-cell;
   text-align: center;
   padding: 0 8px;
-  border-left: 1px solid #FAFAFA;
+  border-left: 1px solid #EEE;
 }
 
 .item-name {
@@ -212,9 +222,6 @@ header {
 .enabled .endis .icon-ban-circle,
 .disabled .endis .icon-circle {
   display: none;
-}
-.disabled .endis {
-
 }
 
 .item-sites img {
