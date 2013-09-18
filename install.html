@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Tmi2 - Install</title>
+  <link rel="stylesheet" href="style/font-awesome/font-awesome.css" />
+  <link rel="stylesheet" href="style/fonts.css" />
+  <link rel="stylesheet" href="style/pure.css" />
+  <link rel="stylesheet" href="style/tmi2.css" />
+</head>
+<body>
+<header>
+  <div class="wrapper pure-g">
+    <div class="tm-logo pure-u">
+      <i class="tm-icon"></i>
+    </div>
+    <div class="tm-title pure-u">
+      <div class="tm-name">Tamper<span>monkey</span> <sup class="tm-version">v3.4.3568.10</sup></div>
+      <div class="tm-by">by Jan Biniok</div>
+    </div>
+    <div class="pure-u tm-nav">
+      <a class="pure-button tm-nav-button"><i class="icon-cog"></i></a>
+      <a class="pure-button tm-nav-button"><i class="icon-question-sign"></i></a>
+    </div>
+  </div>
+</header>
+
+<div class="page-title-bar">
+  <div class="wrapper">
+      Install Script:
+    </div>
+  </div>
+</div>
+
+<article>
+  <div class="wrapper pure-g">
+    <div class="script-info pure-u-3-4">
+      <h3 class="script-name">
+          Gist UserScript Install Link <span class="script-version">v0.1.3</span>
+      </h3>
+      <dl class="script-info-list">
+        <dt>By</dt>
+          <dd>Some One</dd>
+        <dt>Intro</dt>
+          <dd>s</dd>
+        <dt>On URL(s)</dt>
+          <dd>
+            http://gist.github.com/*<br/>
+            https://gist.github.com/*
+          </dd>
+        <dt>Address</dt>
+          <dd>http://userscripts.org/scripts/source/67503.user.js</dd>
+      </dl>
+    </div>
+    <div class="script-install pure-u-1-4">
+      <button class="pure-button button-install">Install</button>
+    </div>
+    <div class="script-code pure-u-1">
+      <textarea name="script-code" id="script-code">
+// ==UserScript==
+// @name			Gist UserScript Install Link
+// @author			Erik Vold
+// @namespace		gistUserScriptInstallLink
+// @include			http://gist.github.com/*
+// @include			https://gist.github.com/*
+// @version			0.1.3
+// @license			MPL 2.0
+// @datecreated		2010-01-28
+// @lastupdated		2013-07-14
+// @homepageURL http://userscripts.org/scripts/show/67503
+// @downloadURL http://userscripts.org/scripts/source/67503.user.js
+// @description		This userscript will add an 'Install' link to all userscript files (which end with .user.js by necessity).
+// ==/UserScript==
+
+(function(doc){
+  var userscripts = doc.evaluate("//a[contains(substring(@href,string-length(@href)-9),'.user.js') and text()='raw']",doc,null,6,null),
+    userscript,raw;
+  for(var i=userscripts.snapshotLength-1;i>-1;i--){
+    userscript = userscripts.snapshotItem(i);
+    userscript.innerHTML = 'install';
+    raw = userscript.cloneNode(false);
+    raw.innerHTML = 'raw';
+    raw.href = "view-source:" + raw.href;
+    userscript.parentNode.insertBefore(raw,userscript);
+  }
+})(document);</textarea>
+    </div>
+  </div>
+</article>
+</body>
+</html>
