@@ -249,13 +249,20 @@ header {
 }
 
 .script-name {
-  font-size: 26px;
+  font-size: 28px;
+  padding-bottom: 20px;
+  border-bottom: 2px dotted #AAA;
+  margin-bottom: 0;
 }
 
 .script-version {
   font-weight:normal;
   margin:0 0.3em;
   color:#689;
+}
+
+.script-info-list {
+  padding-bottom: 20px;
 }
 
 .script-info-list dt,
