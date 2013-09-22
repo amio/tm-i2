@@ -62,7 +62,7 @@ header {
 .tm-logo {
   font-size:75px;
   line-height:80px;
-  padding:0 0.1em;
+  padding-right:0.1em;
 }
 
 .tm-title {
@@ -117,9 +117,9 @@ header {
   border-bottom:1px solid #CCC;
   font-size:20px;
   height:27px;
-  color:#888;
+  color:#AAA;
   background-color:#FFF;
-  letter-spacing:0.05em;
+  text-transform: uppercase;
 }
 
 /* =========== Menu Bar =========== */
@@ -242,27 +242,48 @@ header {
 
 /* ========== Install ========== */
 
+.script-info-n-install {
+  display: table;
+}
+
+.script-info,
+.script-install {
+  display: tabel-cell;
+  vertical-align: center;
+}
+
 .script-info {
-  min-height: 170px;
+  padding-right: 1em;
   font-size:14px;
   color:#455;
 }
 
 .script-name {
   font-size: 28px;
-  padding-bottom: 20px;
-  border-bottom: 2px dotted #AAA;
+  padding-bottom: 1em;
+  border-bottom: 2px dotted #CCC;
   margin-bottom: 0;
 }
 
 .script-version {
+  position: relative;
+  bottom: 0.2em;
+  font-size: 0.5em;
   font-weight:normal;
   margin:0 0.3em;
-  color:#689;
+  padding: 2px 8px;
+  color: #CEF;
+  background-color: #689;
+  border-radius: 5px;
+}
+
+.script-version:before {
+  content: "v";
+  margin-right: 3px;
 }
 
 .script-info-list {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .script-info-list dt,
@@ -274,6 +295,7 @@ header {
   width: 90px;
   float: left;
   text-align: right;
+  text-transform: uppercase;
   color: #777;
 }
 
@@ -287,8 +309,10 @@ header {
 }
 
 .script-install {
+  width: 30%;
   text-align:center;
-  margin-top:3em;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .button-install {
@@ -305,6 +329,7 @@ header {
   padding: 0.3em 0.5em;
   font: 12px/16px Menlo, monospace;
   tab-size: 4;
-  min-height: 600px;
+  min-height: 500px;
   outline:none;
+  margin-bottom: 2em;
 }
