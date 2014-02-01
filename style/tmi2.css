@@ -252,8 +252,8 @@ header {
 
 .script-info,
 .script-install {
-  display: tabel-cell;
-  vertical-align: center;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .script-info {
