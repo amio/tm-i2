@@ -6,238 +6,242 @@
 /* ========== Pure Rewrite ========== */
 
 body, button, .pure-g [class *= "pure-u"], .pure-g-r [class *= "pure-u"] {
-  font-family:"Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-body { background-color:whitesmoke; }
-ul, ol, li { list-style:none; margin:0; padding:0; }
-a { text-decoration:none; }
+
+body {
+  background-color: whitesmoke;
+}
+
+ul, ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
 
 /* ========== Global ========== */
 
-.wrapper {
-  width:960px;
-  margin:0 auto;
-  position:relative;
+.content-wrapper {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .tm-icon {
-  display:inline-block;
-  height:0.76em;
-  width:0.76em;
-  background-color:#021;
-  position:relative;
-  border-radius:0.08em;
-}
-
-.tm-icon:before, .tm-icon:after {
-  content:"";
-  display:block;
-  position:absolute;
-  background-color:#9CBB92;
-  border-radius:0.2em;
-  width:0.3em;
-  height:0.3em;
-  bottom:0.05em;
-}
-
-.tm-icon:before {
-  left:0.05em;
-}
-
-.tm-icon:after {
-  right:0.05em;
+  display: inline-block;
+  height: 0.76em;
+  width: 0.76em;
+  background: transparent url(images/tm-icon.svg) no-repeat center;
+  background-size: 100% auto;
+  position: relative;
 }
 
 /* ========== Header ========== */
 
 header {
-  height:80px;
-  color:#031;
-  overflow:hidden;
-  background:linear-gradient(to bottom, #CDA 0%, #8A8 100%);
-  border-top:3px solid #2A5C0B;
-  border-bottom:1px solid #475;
+  height: 80px;
+  color: #031;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #CDA 0%, #8A8 100%);
+  border-top: 3px solid #2A5C0B;
+  border-bottom: 1px solid #475;
 }
 
 .tm-logo {
-  font-size:75px;
-  line-height:80px;
-  padding-right:0.1em;
+  font-size: 75px;
+  line-height: 80px;
+  padding-right: 0.1em;
 }
 
 .tm-title {
-  padding:25px 0;
+  padding: 25px 0;
 }
 
 .tm-name {
-  font-family:"Open Sans Condensed", sans-serif;
-  font-weight:bold;
-  font-size:40px;
-  line-height:20px;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 20px;
 }
 
 .tm-version {
-  font-weight:normal;
-  font-size:0.4em;
-  vertical-align:top;
-  position:relative;
-  top:0.4em;
+  font-weight: normal;
+  font-size: 0.4em;
+  vertical-align: top;
+  position: relative;
+  top: 0.4em;
 }
 
 .tm-by {
-  font-size:14px;
-  line-height:36px;
-  margin-left:80px;
-  opacity:0.8;
+  font-size: 14px;
+  line-height: 36px;
+  margin-left: 80px;
+  opacity: 0.8;
 }
 
 .tm-nav {
-  position:absolute;
-  right:0;
-  top:0;
-  bottom:0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 .tm-nav-button {
-  height:100%;
-  font-size:40px;
-  line-height:45px;
-  background-color:transparent;
-  opacity:0.7;
-  padding:0.4em 0.6em;
+  height: 100%;
+  font-size: 40px;
+  line-height: 45px;
+  background-color: transparent;
+  opacity: 0.7;
+  padding: 0.4em 0.6em;
 }
 
 .tm-nav-button:hover, .tm-nav-button.active {
-  background-color:rgba(0, 0, 0, 0.05);
-  opacity:1;
+  background-color: rgba(0, 0, 0, 0.05);
+  opacity: 1;
 }
 
 .page-title-bar {
-  padding:6px 0;
-  border-bottom:1px solid #CCC;
-  font-size:20px;
-  height:27px;
-  color:#AAA;
-  background-color:#FFF;
+  padding: 6px 0;
+  border-bottom: 1px solid #CCC;
+  font-size: 20px;
+  height: 27px;
+  color: #AAA;
+  background-color: #FFF;
   text-transform: uppercase;
 }
 
 /* =========== Menu Bar =========== */
 
-.list-menu .pure-button { padding:0.4em 0.6em; background-color:#F4F4F4; color:#444; box-sizing:border-box; line-height:1.2em; }
-.list-menu .pure-button[disabled] { border:1px solid #DDD; }
-.list-menu .pure-button[class*="icon-"]:before { margin-right:0.4em; }
+.list-menu .pure-button {
+  padding: 0.4em 0.6em;
+  background-color: #F4F4F4;
+  color: #444;
+  box-sizing: border-box;
+  line-height: 1.2em;
+}
+
+.list-menu .pure-button[disabled] {
+  border: 1px solid #DDD;
+}
+
+.list-menu .pure-button[class*="icon-"]:before {
+  margin-right: 0.4em;
+}
 
 .list-menu {
-  font-size:14px;
+  font-size: 14px;
 }
 
 .list-menu button {
-  line-height:1em;
-  border:1px solid rgba(0, 0, 0, 0.2);
+  line-height: 1em;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .list-selector {
-  width:30px;
-  font-size:20px;
-  line-height:1em;
-  text-align:center;
+  width: 30px;
+  font-size: 20px;
+  line-height: 1em;
+  text-align: center;
 }
 
 .list-operation .pure-button {
-  margin:0;
+  margin: 0;
 }
 
 .menu-else {
-  text-align:right;
+  text-align: right;
 }
 
 /* =========== List =========== */
 
 .list-row, .list-head {
-  display:table;
-  font-size:14px;
-  line-height:2em;
-  height:2em;
-  color:#456;
-  border-bottom:1px solid #DDD;
+  display: table;
+  font-size: 14px;
+  line-height: 2em;
+  height: 2em;
+  color: #456;
+  border-bottom: 1px solid #DDD;
 }
 
 .list-row:hover {
-  background-color:#FAFEFC;
+  background-color: #FAFEFC;
 }
 
 .list-head {
-  color:#BBB;
-  font-size:10px;
-  text-transform:uppercase;
+  color: #BBB;
+  font-size: 10px;
+  text-transform: uppercase;
 }
 
 .list-cell {
-  display:table-cell;
-  text-align:center;
-  padding:0 8px;
-  border-left:1px solid #EEE;
+  display: table-cell;
+  text-align: center;
+  padding: 0 8px;
+  border-left: 1px solid #EEE;
 }
 
 .item-name {
-  width:500px;
-  text-align:left;
+  width: 500px;
+  text-align: left;
 }
 
 .item-links {
-  width:60px;
+  width: 60px;
 }
 
 .item-version {
-  width:120px;
-  text-align:left;
+  width: 120px;
+  text-align: left;
 }
 
 .item-features {
-  width:70px;
+  width: 70px;
 }
 
 .item-actions {
-  width:90px;
+  width: 90px;
 }
 
 .item-updated {
-  float:right;
+  float: right;
 }
 
 .item-version-number {
-  margin:0 2px;
+  margin: 0 2px;
 }
 
 .item-sites {
-  float:right;
+  float: right;
 }
 
 .item-name a {
-  color:#456;
+  color: #456;
 }
 
 .list-row.disabled,
 .list-row.disabled .item-name * {
-  color:#AAA;
+  color: #AAA;
 }
 
 .endis {
-  white-space:nowrap;
-  overflow:hidden;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .enabled .endis .icon-ban-circle,
 .disabled .endis .icon-circle {
-  display:none;
+  display: none;
 }
 
 .item-sites img {
-  max-width:16px;
-  max-height:16px;
-  margin:0 2px;
-  vertical-align:middle;
+  max-width: 16px;
+  max-height: 16px;
+  margin: 0 2px;
+  vertical-align: middle;
 }
 
 /* ========== Install ========== */
@@ -254,8 +258,8 @@ header {
 
 .script-info {
   padding-right: 1em;
-  font-size:14px;
-  color:#455;
+  font-size: 14px;
+  color: #455;
 }
 
 .script-name {
@@ -269,8 +273,8 @@ header {
   position: relative;
   bottom: 0.2em;
   font-size: 0.5em;
-  font-weight:normal;
-  margin:0 0.3em;
+  font-weight: normal;
+  margin: 0 0.3em;
   padding: 2px 8px;
   color: #CEF;
   background-color: #689;
@@ -310,16 +314,16 @@ header {
 
 .script-install {
   width: 30%;
-  text-align:center;
+  text-align: center;
   display: table-cell;
   vertical-align: middle;
 }
 
 .button-install {
-  background:#696;
-  color:#FFF;
-  font-size:30px;
-  border-radius:5px;
+  background: #696;
+  color: #FFF;
+  font-size: 30px;
+  border-radius: 5px;
 }
 
 #script-code {
@@ -330,6 +334,6 @@ header {
   font: 12px/16px Menlo, monospace;
   tab-size: 4;
   min-height: 500px;
-  outline:none;
+  outline: none;
   margin-bottom: 2em;
 }
