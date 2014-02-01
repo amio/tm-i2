@@ -1,135 +1,139 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8" />
-  <title>Tmi2 - Main (list)</title>
-  <link rel="stylesheet" href="style/font-awesome/font-awesome.css" />
-  <link rel="stylesheet" href="style/fonts.css" />
-  <link rel="stylesheet" href="style/pure.css" />
-  <link rel="stylesheet" href="style/tmi2.css" />
+    <meta charset="UTF-8"/>
+    <title>Tmi2 - Main (list)</title>
+    <link rel="stylesheet" href="style/font-awesome/font-awesome.css"/>
+    <link rel="stylesheet" href="style/fonts.css"/>
+    <link rel="stylesheet" href="style/pure.css"/>
+    <link rel="stylesheet" href="style/tmi2.css"/>
 </head>
 <body>
 <header>
-  <div class="wrapper pure-g">
-    <div class="tm-logo pure-u">
-      <i class="tm-icon"></i>
+    <div class="content-wrapper pure-g">
+        <div class="tm-logo pure-u">
+            <i class="tm-icon"></i>
+        </div>
+        <div class="tm-title pure-u">
+            <div class="tm-name">Tamper<span>monkey</span> <sup class="tm-version">v3.4.3568.10</sup></div>
+            <div class="tm-by">by Jan Biniok</div>
+        </div>
+        <div class="pure-u tm-nav">
+            <a class="pure-button tm-nav-button"><i class="icon-cog"></i></a>
+            <a class="pure-button tm-nav-button"><i class="icon-question-sign"></i></a>
+        </div>
     </div>
-    <div class="tm-title pure-u">
-      <div class="tm-name">Tamper<span>monkey</span> <sup class="tm-version">v3.4.3568.10</sup></div>
-      <div class="tm-by">by Jan Biniok</div>
-    </div>
-    <div class="pure-u tm-nav">
-      <a class="pure-button tm-nav-button"><i class="icon-cog"></i></a>
-      <a class="pure-button tm-nav-button"><i class="icon-question-sign"></i></a>
-    </div>
-  </div>
 </header>
 <div class="page-title-bar list-menu">
-  <div class="wrapper pure-g">
-      <div class="list-operation pure-u-2-3">
-        <label class="pure-u list-selector"><input type="checkbox"></label>
-        <button class="pure-button icon-circle" disabled>Enable</button>
-        <button class="pure-button icon-ban-circle" disabled>Disable</button>
-        <button class="pure-button icon-upload" disabled>Update</button>
-        <button class="pure-button icon-trash" disabled>Remove</button>
-      </div>
-      <div class="menu-else pure-u-1-3">
-        <button class="pure-button icon-plus">Create</button>
-        <button class="pure-button icon-upload-alt">Import</button>
-        <button class="pure-button icon-download-alt">Export</button>
-      </div>
+    <div class="content-wrapper pure-g">
+        <div class="list-operation pure-u-2-3">
+            <label class="pure-u list-selector"><input type="checkbox"></label>
+            <button class="pure-button icon-circle" disabled>Enable</button>
+            <button class="pure-button icon-ban-circle" disabled>Disable</button>
+            <button class="pure-button icon-upload" disabled>Update</button>
+            <button class="pure-button icon-trash" disabled>Remove</button>
+        </div>
+        <div class="menu-else pure-u-1-3">
+            <button class="pure-button icon-plus">Create</button>
+            <button class="pure-button icon-upload-alt">Import</button>
+            <button class="pure-button icon-download-alt">Export</button>
+        </div>
     </div>
-  </div>
 </div>
 <article>
-  <div class="wrapper">
+    <div class="content-wrapper">
 
-    <div class="list-head">
-      <div class="list-selector"></div>
-      <div class="list-cell item-name">Name<span class="item-sites">On Sites</span></div>
-      <div class="list-cell item-links">Homepage</div>
-      <div class="list-cell item-version">Version <i class="item-updated">Last Updated</i></div>
-      <div class="list-cell item-features">Features</div>
-      <div class="list-cell item-actions">Actions</div>
+        <div class="list-head">
+            <div class="list-selector"></div>
+            <div class="list-cell item-name">Name<span class="item-sites">On Sites</span></div>
+            <div class="list-cell item-links">Homepage</div>
+            <div class="list-cell item-version">Version <i class="item-updated">Last Updated</i></div>
+            <div class="list-cell item-features">Features</div>
+            <div class="list-cell item-actions">Actions</div>
+        </div>
+
+        <ul>
+            <li class="list-row enabled">
+                <div class="list-selector"><input type="checkbox"></div>
+                <div class="list-cell item-name">
+                    <a class="endis"><i class="icon-circle"></i><i class="icon-ban-circle"></i></a>
+                    <a href="###">Straight Google</a>
+                    <span class="item-sites">
+                        <img class="icon16" src="http://www.google.com/favicon.ico" title="*://www.google.*/*q=*"/>
+                        <img class="icon16" src="http://www.youtube.com/favicon.ico" title="*://www.youtube.*"/>
+                    </span>
+                </div>
+                <div class="list-cell item-links">
+                    <a href="" class="icon-home"></a>
+                </div>
+                <div class="list-cell item-version">
+                    v<span class="item-version-number">1.17.13</span>
+                    <i class="item-updated">20h</i>
+                </div>
+                <div class="list-cell item-features">
+                    <i class="icon-lock"></i>
+                </div>
+                <div class="list-cell item-actions">
+                    <i class="icon-trash"></i>
+                    <i class="icon-edit"></i>
+                </div>
+            </li>
+
+            <li class="list-row enabled">
+                <div class="list-selector"><input type="checkbox"></div>
+                <div class="list-cell item-name">
+                    <a class="endis"><i class="icon-circle"></i><i class="icon-ban-circle"></i></a>
+                    <a href="###">YouTube Video Download</a>
+                    <span class="item-sites">
+                        <img class="icon16" src="http://userscripts.org/images/script_icon.png"
+                             title="https://userscripts.org/scripts/source/62634.meta.js">
+                        <img class="icon16"
+                             src="http://www.youtube.com/favicon.ico"
+                             title="http://www.youtube.com/watch?*">
+                    </span>
+                </div>
+                <div class="list-cell item-links">
+                    <a href="" class="icon-home"></a>
+                </div>
+                <div class="list-cell item-version">
+                    v<span class="item-version-number">4.1.1</span>
+                    <i class="item-updated">20h</i>
+                </div>
+                <div class="list-cell item-features">
+                    <i class="icon-shield"></i>
+                    <i class="icon-globe"></i>
+                </div>
+                <div class="list-cell item-actions">
+                    <i class="icon-trash"></i>
+                    <i class="icon-edit"></i>
+                </div>
+            </li>
+
+            <li class="list-row disabled">
+                <div class="list-selector"><input type="checkbox"></div>
+                <div class="list-cell item-name">
+                    <a class="endis"><i class="icon-circle"></i><i class="icon-ban-circle"></i></a>
+                    <a href="###">YouTube Video Download</a>
+                </div>
+                <div class="list-cell item-links">
+                    <a href="" class="icon-home"></a>
+                </div>
+                <div class="list-cell item-version">
+                    v<span class="item-version-number">4.1.1</span>
+                    <i class="item-updated">20h</i>
+                </div>
+                <div class="list-cell item-features">
+                    <i class="icon-shield"></i>
+                    <i class="icon-globe"></i>
+                </div>
+                <div class="list-cell item-actions">
+                    <i class="icon-trash"></i>
+                    <i class="icon-edit"></i>
+                </div>
+            </li>
+        </ul>
+
     </div>
-
-    <ul>
-      <li class="list-row enabled">
-        <div class="list-selector"><input type="checkbox"></div>
-        <div class="list-cell item-name">
-          <a class="endis"><i class="icon-circle"></i><i class="icon-ban-circle"></i></a>
-          <a href="###">Straight Google</a>
-          <span class="item-sites">
-            <img class="icon16" src="http://www.google.com/favicon.ico" title="*://www.google.*/*q=*" /><img class="icon16" src="http://www.youtube.com/favicon.ico" title="*://www.youtube.*" />
-          </span>
-        </div>
-        <div class="list-cell item-links">
-          <a href="" class="icon-home"></a>
-        </div>
-        <div class="list-cell item-version">
-          v<span class="item-version-number">1.17.13</span>
-          <i class="item-updated">20h</i>
-        </div>
-        <div class="list-cell item-features">
-          <i class="icon-lock"></i>
-        </div>
-        <div class="list-cell item-actions">
-          <i class="icon-trash"></i>
-          <i class="icon-edit"></i>
-        </div>
-      </li>
-
-      <li class="list-row enabled">
-        <div class="list-selector"><input type="checkbox"></div>
-        <div class="list-cell item-name">
-          <a class="endis"><i class="icon-circle"></i><i class="icon-ban-circle"></i></a>
-          <a href="###">YouTube Video Download</a>
-          <span class="item-sites">
-            <img class="icon16" src="http://userscripts.org/images/script_icon.png" title="https://userscripts.org/scripts/source/62634.meta.js"><img class="icon16" src="http://www.youtube.com/favicon.ico" title="http://www.youtube.com/watch?*">
-          </span>
-        </div>
-        <div class="list-cell item-links">
-          <a href="" class="icon-home"></a>
-        </div>
-        <div class="list-cell item-version">
-          v<span class="item-version-number">4.1.1</span>
-          <i class="item-updated">20h</i>
-        </div>
-        <div class="list-cell item-features">
-          <i class="icon-shield"></i>
-          <i class="icon-globe"></i>
-        </div>
-        <div class="list-cell item-actions">
-          <i class="icon-trash"></i>
-          <i class="icon-edit"></i>
-        </div>
-      </li>
-
-      <li class="list-row disabled">
-        <div class="list-selector"><input type="checkbox"></div>
-        <div class="list-cell item-name">
-          <a class="endis"><i class="icon-circle"></i><i class="icon-ban-circle"></i></a>
-          <a href="###">YouTube Video Download</a>
-        </div>
-        <div class="list-cell item-links">
-          <a href="" class="icon-home"></a>
-        </div>
-        <div class="list-cell item-version">
-          v<span class="item-version-number">4.1.1</span>
-          <i class="item-updated">20h</i>
-        </div>
-        <div class="list-cell item-features">
-          <i class="icon-shield"></i>
-          <i class="icon-globe"></i>
-        </div>
-        <div class="list-cell item-actions">
-          <i class="icon-trash"></i>
-          <i class="icon-edit"></i>
-        </div>
-      </li>
-    </ul>
-
-  </div>
 </article>
 </body>
 </html>
